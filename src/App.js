@@ -64,9 +64,7 @@ const App = () => {
 
   const handleSearch = value => {
     setQuery(value)
-    if (value && value.length > 5) {
-      debounce(onSearchMovies(value),50000)
-    }
+    debounce(onSearchMovies(value),5000)
   }
 
   return (
