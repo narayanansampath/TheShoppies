@@ -1,5 +1,5 @@
 const APIKEY = 'c296b759'
-const domain = 'http://www.omdbapi.com'
+const domain = 'https://www.omdbapi.com'
 
 export const searchMovies = (query) => {
     return fetch(`${domain}/?s=${query}&apikey=${APIKEY}`)
